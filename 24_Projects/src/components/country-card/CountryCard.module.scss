@@ -1,0 +1,48 @@
+@use "../../styles/colors";
+
+.countryCard {
+    max-width: 25rem;
+    min-width: 25rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    background: #fff;
+
+    span {
+        font-weight: 600;
+        color: #616161;
+    }
+
+    &:hover {
+        box-shadow: 0 0.1rem 1rem #cfc9c7;
+        -webkit-transition: all 0.2s ease-in;
+        transform: scale(1.015);
+    }
+}
+
+.countryFlag {
+    height: 12rem;
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 75%;
+        max-height: 75%;
+        min-width: 75%;
+        min-height: 75%;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 0.6rem 0.2rem #f1e1e1;
+    }
+}
+
+.countryName {
+    font-size: 1.6rem;
+    color: colors.$color-title;
+    letter-spacing: 0.075rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}

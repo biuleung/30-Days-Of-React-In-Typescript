@@ -1,0 +1,158 @@
+.app {}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.prerequisite {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.subscribe {
+  margin-top: 12px;
+  background: #FFB6C1;
+  padding: 12px 0 36px 0;
+}
+
+.subscribe input {
+  border: 1px white solid;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.userCard {
+  padding: 12px;
+  background-color: white;
+  margin: 15px;
+}
+
+.userCard .picture {
+  width: 180px;
+}
+
+
+.userCard .name,
+.userCard .skills,
+.userCard .title {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.userCard .name,
+.userCard .skills {
+  font-weight: bold;
+  font-size: 18px;
+  gap: 7px;
+}
+
+.userCard .title,
+.userCard .date {
+  color: gray;
+}
+
+.userCard .picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.userCard .sign {
+  background-color: #40E0D0;
+  color: white;
+  border-radius: 50%;
+}
+
+.skillContent {
+  margin: 12px 5px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 7px;
+}
+
+.date {
+  margin-top: 12px;
+}
+
+.skill {
+  background: #40E0D0;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: absolute;
+  background-color: beige;
+}
+
+.mt-1-rem {
+  margin-top: 1rem;
+}
+
+.mt-3-rem {
+  margin-top: 3rem;
+}
+
+.mb-3-rem {
+  margin-bottom: 3rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.numbers,
+.hexaColors {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2px;
+}
+
+.number {
+  font-size: 27px;
+  padding: 2rem 0;
+}
+
+.chartBar {
+  margin-bottom: 7px;
+}
+
+.country {
+  width: 20%;
+}
+
+.bar {
+  width: 55%;
+  padding-right: 12px;
+}
+
+.population {
+  width: 23%;
+}
+
+.chartBar,
+.country,
+.population {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+.main {
+}
+
+.main,
+
+.header{
+  padding: 21px 0;
+}
+
+.header,
+.footer {
+    background-color: #f0f0f0;
+}
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #61dbfb;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00f;
+    background: #4776e6;
+    background: linear-gradient(90deg,#8e54e9,#4776e6);
+    border-radius: 10px;
+}

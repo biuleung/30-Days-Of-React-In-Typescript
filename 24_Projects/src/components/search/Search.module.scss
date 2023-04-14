@@ -1,0 +1,14 @@
+@use "../../styles/colors";
+
+.searchCountries {
+    color: colors.$color-title;
+    width: 50%;
+    height: 5rem;
+    margin: 3rem auto;
+    text-indent: 2rem;
+    outline: none;
+    border: 0.2rem solid #f8e7e7;
+    font-size: 2rem;
+    border-radius: 3rem;
+    background: #faf6f6;
+}

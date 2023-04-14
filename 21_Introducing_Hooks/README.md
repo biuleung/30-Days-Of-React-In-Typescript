@@ -1,0 +1,1 @@
+Everything in this project has been implemented by using React Hooks, except 07_Class_Components.

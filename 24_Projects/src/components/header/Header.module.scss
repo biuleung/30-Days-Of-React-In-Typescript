@@ -1,0 +1,19 @@
+@use "../../styles/colors";
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: colors.$color-title;
+    font-size: 58px;
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: colors.$color-subtitle;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 2px;
+}

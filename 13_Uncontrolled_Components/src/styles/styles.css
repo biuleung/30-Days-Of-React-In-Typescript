@@ -1,0 +1,29 @@
+.app {}
+
+.main {
+  min-height: 80vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: absolute;
+  background-color: beige;
+}
+
+.mt-1-rem {
+  margin-top: 1rem;
+}
+
+.mt-3-rem {
+  margin-top: 3rem;
+}
+
+.mb-3-rem {
+  margin-bottom: 3rem;
+}
+
+.w-80 {
+  width: 80%;
+}

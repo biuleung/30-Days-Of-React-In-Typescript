@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+          rel="stylesheet" />
+    <title>30 Days Of React: 02_introduction_to_react</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .app {}
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .prerequisite {
+            font-size: 24px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            position: absolute;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root"></div>
+
+    <script crossorigin
+            src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // To get the root element from the HTML document
+        const rootElement = document.querySelector('.root');
+        console.log(rootElement);
+
+
+        const headerStyle = { border: '2px solid yellow', color: 'white', backgroundColor: 'black' };
+        const header = (
+            <header style={headerStyle}>
+                <h1>Getting started</h1>
+                <small>Dec 12, 2022</small>
+            </header>
+        )
+
+        const techs = ['HTML', 'CSS', 'JavaScript'];
+
+
+        const main = (
+            <main className='main'>
+                <div>
+                    <p className='prerequisite'>Prerequisite</p>
+                    <ul>
+                        {techs?.map((tech, index) => <li key={index}>{tech}</li>)}
+                    </ul>
+                </div>
+            </main>
+        )
+
+        let date = new Date().getFullYear();
+
+        const footer = (
+            <footer className='footer'>
+                <p>copyright {date}</p>
+            </footer>
+        )
+
+        const app = (
+            <div className="app">
+                {header}
+                {main}
+                {footer}
+            </div>
+        )
+
+        // we render the JSX element using the ReactDOM package
+        // ReactDOM has the render method and the render method takes two arguments
+        ReactDOM.render(app, rootElement)
+
+    </script>
+    <script></script>
+</body>
+
+</html>
